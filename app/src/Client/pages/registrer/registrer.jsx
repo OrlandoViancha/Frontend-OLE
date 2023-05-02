@@ -18,7 +18,7 @@ const Registrer=()=>{
 
     const registrer=(e)=>{
         e.preventDefault();
-        Axios.post("http://empresa-ole-backend.vercel.app/registrer",{
+        Axios.post("https://empresa-ole-backend.vercel.app/registrer",{
 
             name:name,
             email:email,

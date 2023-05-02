@@ -13,7 +13,7 @@ const Orders = () => {
   const [descriptionOrder, setDescriptionOrder] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://empresa-ole-backend.vercel.app/orders").then((response) => {
+    Axios.get("https://empresa-ole-backend.vercel.app/orders").then((response) => {
       
         const query=response.data.filter(value => value.dispatched==false)
         setOrders(query);
@@ -31,7 +31,7 @@ const Orders = () => {
 
         e.preventDefault();
 
-        Axios.post(`http://empresa-ole-backend.vercel.app/orders/${id}`)
+        Axios.post(`https://empresa-ole-backend.vercel.app/orders/${id}`)
         .then(response=>{
 
             if(response.status==200){

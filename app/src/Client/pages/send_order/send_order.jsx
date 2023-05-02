@@ -24,7 +24,7 @@ const SendOrder=()=>{
         ? 
         (urlParams.get("preference_id")==localStorage.getItem("preferenceId")
             ?
-            (Axios.post("http://empresa-ole-backend.vercel.app/payload/sendOrder",{
+            (Axios.post("https://empresa-ole-backend.vercel.app/payload/sendOrder",{
                 total:Total(),
                 cartItems:cartItems,
                 idUser:cookies.get("id")

@@ -20,7 +20,7 @@ const Login = () => {
   }, []);
 
   const logged = () => {
-    Axios.post("http://empresa-ole-backend.vercel.app/login", {
+    Axios.post("https://empresa-ole-backend.vercel.app/login", {
       name_user: username,
       password: password,
     })  

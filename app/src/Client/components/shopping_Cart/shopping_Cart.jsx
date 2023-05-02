@@ -32,7 +32,7 @@ const ShoppingCart = () => {
         >
           {
             cartItems.map((value,index)=>{
-              var route = "http://empresa-ole-backend.vercel.app/" + value.file_img
+              var route = "https://empresa-ole-backend.vercel.app/" + value.file_img
               return(
                 <div key={index} class="sidebar_cart-shopping_products-content">
           <div class="sidebar_cart-shopping_products-content-img">

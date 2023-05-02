@@ -16,7 +16,7 @@ const SalesReport = () => {
 
   useEffect(()=>{
 
-    Axios.get("http://empresa-ole-backend.vercel.app/report")
+    Axios.get("https://empresa-ole-backend.vercel.app/report")
     .then(response=>setValueCategories(response.data))
   },[])
 

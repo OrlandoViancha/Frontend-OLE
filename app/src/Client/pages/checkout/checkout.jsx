@@ -19,7 +19,7 @@ const Checkout=()=>{
         e.preventDefault();
         if(cookies.get("username")){
 
-            Axios.post("http://empresa-ole-backend.vercel.app/payload",{cartItems:cartItems})
+            Axios.post("https://empresa-ole-backend.vercel.app/payload",{cartItems:cartItems})
             .then(response=>{
                 setPreferenceId(response.data)
                 setCheckoutState({state:true})
